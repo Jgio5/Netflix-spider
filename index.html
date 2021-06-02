@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Netflix | Spider Man</title>
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <a href="#" class="logo">
+            <img src="img/logo-netflix.png" alt="Logo Netflix">
+        </a>
+        <!-- /Logo -->
+
+        <!-- Nav -->
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+        <!-- /Nav -->
+
+        <!-- Search bar -->
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+        <!-- Search bar -->
+    </header>
+
+    <main>
+        <div class="jumbo">
+            <img class="bg" src="img/jumbo.jpg" alt="Poster Spider Man - Far from home">
+            <!-- Contenuto del film -->
+            <div class="content">
+                <img class="movieTitle" src="img/title-spider.png" alt="Title film Mulan">
+                <div class="info">
+                    <h4>
+                        <span>2019</span>
+                        <span><i>12+</i></span>
+                        <span>2h 49min</span>
+                        <span>Supereroi</span>
+                    </h4>
+                </div>
+                <p>
+                    Anche il supereroe di zona ha bisogno di una vacanza ogni tanto, ma una nuova minaccia obbliga Peter Parker a tornare in azione durante una gita scolastica in Europa.
+                </p>
+                <!-- /Contenuto del film -->
+
+                <!-- Button -->
+                <div class="buttons">
+                    <a href="#">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                        Play
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-plus" aria-hidden="true"></i>
+                        My List
+                    </a>
+                </div>
+                <!-- /Button -->
+            </div>
+
+                <!-- Button play Video -->
+                <a class="play" onclick="toggleVideo()"><img src="img/play.png" alt="btn play">Watch Trailer</a>
+            </div>
+    
+            <div class="trailer">
+                <!-- Video -->
+                <video src="img/video.mp4" controls="true"></video>
+                <!-- Button close Video -->
+                <img class="close" onclick="toggleVideo();" src="img/close.png" alt="btn close">
+            </div>
+        </div>
+    </main>
+    
+    <!-- JS -->
+    <script type="text/javascript" src="js/main.js">
+    </script>
+    <!-- /JS -->
+</body>
+</html>
